@@ -233,29 +233,3 @@ class TD3(object):
             torch.load("%s/%s_critic_target.pth" % (directory, filename))
         )
         print(f"Loaded weights from: {directory}")
-
-    def prepare_state(self, latest_scan, distance, cos, sin, collision, goal, action):
-        # update the returned data from ROS into a form used for learning in the current model
-        latest_scan = np.array(latest_scan)
-
-        inf_mask = np.isinf(latest_scan)
-        latest_scan[inf_mask] = 7.0
-
-        max_bins = self.state_dim - 5
-        bin_size = int(np.ceil(len(latest_scan) / max_bins))
-
-        # Initialize the list to store the minimum values of each bin
-        min_values = []
-
-        # Loop through the data and create bins
-        for i in range(0, len(latest_scan), bin_size):
-            # Get the current bin
-            bin = latest_scan[i : i + min(bin_size, len(latest_scan) - i)]
-            # Find the minimum value in the current bin and append it to the min_values list
-            min_values.append(min(bin))
-        state = min_values + [distance, cos, sin] + [action[0], action[1]]
-
-        assert len(state) == self.state_dim
-        terminal = 1 if collision or goal else 0
-
-        return state, terminal
