@@ -34,10 +34,7 @@ endif()
 
 install(
   DIRECTORY
-    launch
-    models
     scripts
-    urdf
     worlds
   DESTINATION
     share/${PROJECT_NAME}/
@@ -46,14 +43,9 @@ install(
 install(
   PROGRAMS
     scripts/replay_buffer.py
-    scripts/test_velodyne_node.py
-    scripts/train_velodyne_node.py
+    scripts/env_ros2.py
+    scripts/TD3.py
     scripts/point_cloud2.py
-    launch/multi_robot_scenario.launch.py
-    launch/robot_state_publisher.launch.py
-    launch/training_simulation.launch.py
-    launch/test_simulation.launch.py    
-    launch/pioneer3dx.rviz
   DESTINATION lib/${PROJECT_NAME}
 )
 
