@@ -70,9 +70,9 @@ class TD3(object):
         lr=1e-4,
         save_every=0,
         load_model=False,
-        save_directory=Path("src/drl_navigation_ros2/models/TD3"),
+        save_directory=Path("./pytorch_models"),
         model_name="TD3",
-        load_directory=Path("src/drl_navigation_ros2/models/TD3"),
+        load_directory=Path("./pytorch_models"),
     ):
         # Initialize the Actor network
         self.device = device
