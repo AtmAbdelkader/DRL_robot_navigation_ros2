@@ -36,6 +36,7 @@ install(
   DIRECTORY
     scripts
     worlds
+    launch
   DESTINATION
     share/${PROJECT_NAME}/
 )
