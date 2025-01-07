@@ -1,3 +1,4 @@
+######################################----------Setup environment using ros2 humble-----------------################################################## 
 #!/usr/bin/env python3
 
 import rclpy
@@ -24,6 +25,12 @@ from visualization_msgs.msg import MarkerArray
 from gazebo_msgs.srv import SpawnEntity, DeleteEntity
 from geometry_msgs.msg import Pose, Point, Quaternion
 from rclpy.logging import LoggingSeverity
+
+####----------Laibrary for gazebo_sim (gazebo ignition)----------------##################
+#from gz.msgs11 import pose_pb2 
+#from gz.transport13 import Node 
+#from gz.msgs11.twist_pb2 import Twist
+#from gz.transport13 import Node as IgnitionNode
 
 GOAL_REACHED_DIST = 0.3
 COLLISION_DIST = 0.35
