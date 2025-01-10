@@ -52,7 +52,7 @@ if __name__ == '__main__':
     writer = SummaryWriter(log_dir="/home/belabed/DRL_robot_navigation_ros2/src/td3/scripts/runs")
 
     # Create the network
-    network = td3(state_dim, action_dim, max_action)
+    network = TD3(state_dim, action_dim, max_action)
     # Create a replay buffer
     replay_buffer = ReplayBuffer(buffer_size, seed)
     if load_model:
