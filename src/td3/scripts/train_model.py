@@ -2,7 +2,7 @@
 
 import rclpy
 from env_ros2 import GazeboEnv, Odom_subscriber, Velodyne_subscriber, SetModelStateClient
-from TD3 import td3
+from TD3 import TD3
 
 
 if __name__ == '__main__':
