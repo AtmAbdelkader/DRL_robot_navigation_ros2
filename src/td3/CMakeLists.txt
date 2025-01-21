@@ -47,6 +47,7 @@ install(
     scripts/env_ros2.py
     scripts/TD3.py
     scripts/point_cloud2.py
+    scripts/dynamic_obstacle.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
