@@ -1,3 +1,8 @@
+########################################
+#Dynamic Obstacle using ROS2 humble 
+# Author : Belabed Abdelkader
+########################################
+
 #!/usr/bin/env python3
 
 import rclpy
