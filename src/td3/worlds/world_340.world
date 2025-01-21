@@ -825,7 +825,7 @@
 	
 	<include>
       	  <uri>model://td_robot</uri>
-      	    <pose>-2.0 -1.0 0.01 0 0 -1.57</pose>
+      	  <pose>-2.0 -1.0 0.01 0 0 -1.57</pose>
           <static>false</static>
 	</include>
 
