@@ -1,5 +1,5 @@
 ########################################
-#Dynamic Obstacle using ROS2 humble 
+#Dynamic Obstacles using ROS2 humble 
 # Author : Belabed Abdelkader
 ########################################
 
