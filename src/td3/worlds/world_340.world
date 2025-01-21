@@ -824,16 +824,16 @@
         <wind/>
 	
 	<include>
-      <uri>model://td_robot</uri>
-      <pose>-2.0 -1.0 0.01 0 0 -1.57</pose>
-      <static>false</static>
-	    </include>
+      	  <uri>model://td_robot</uri>
+      	    <pose>-2.0 -1.0 0.01 0 0 -1.57</pose>
+          <static>false</static>
+	</include>
 
 	    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
 	      <ros>
-		      <namespace>/gazebo</namespace>
+		<namespace>/gazebo</namespace>
 	      </ros>
-	      <update_rate>50</update_rate>
+	     <update_rate>50</update_rate>
 	    </plugin>
       </world>
     </sdf>
