@@ -1,7 +1,7 @@
-########################################
-#Dynamic Obstacles using ROS2 humble 
-# Author : Belabed Abdelkader
-########################################
+#######################################
+# Dynamic Obstacles using ROS2 humble #
+# Author : Belabed Abdelkader.        #
+#######################################
 
 #!/usr/bin/env python3
 
