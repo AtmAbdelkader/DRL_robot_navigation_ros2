@@ -439,7 +439,7 @@ class GazeboEnv(Node):
     #! Visualize the goal_point in gazebo environment
     def spawn_goal_marker(self, x, y):
         # Path to your SDF model file
-        model_path = '/home/belabed/DRL_robot_navigation_ros2/src/td3/gazebo_goal/goal.xml'
+        model_path = './td3/gazebo_goal/goal.xml'
         with open(model_path, 'r') as f:
             model_xml = f.read()
 
